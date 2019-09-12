@@ -1,5 +1,4 @@
-<%= form_for product do |f| %>
-  <%= f.label :product %>
-  <%= f.text_field :product %>
-  <%= f.submit "Add to Cart" %>
-<% end %>
+<%= form_tag ("/products/add") do %>
+<%= label_tag :product %>
+<%= text_field_tag :product %>
+<%= buttong_tag "Add to Cart" %>
