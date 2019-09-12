@@ -6,4 +6,7 @@
   <%end%>
 </li>
 
-<%= link_to "Add Item", products_add_path %>
+<%= form_tag ("/products/add") do %>
+<%= label_tag :product %>
+<%= text_field_tag :product %>
+<%= buttong_tag "Add to Cart" %>
