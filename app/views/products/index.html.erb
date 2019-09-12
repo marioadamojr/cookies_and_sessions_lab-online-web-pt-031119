@@ -6,7 +6,9 @@
   <%end%>
 </li>
 
-<%= form_tag ("/products/add") do %>
+<%= form_tag ({controller: 'products',
+    action: 'add',
+    method: 'post'}) do %>
 <%= label_tag :product %>
 <%= text_field_tag :product %>
 <%= button_tag "Add to Cart" %>
